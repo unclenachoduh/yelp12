@@ -1,7 +1,17 @@
 import json, sys
-import numpy as np
+#import numpy as np
 
-json_data = open("small_rev.json").readlines()
+json_data = open("yelp_dataset/yelp_academic_dataset_review.json").readlines()
+
+region = open("Dataset/" + sys.argv[1]).read().split('\n')
+
+regions = {}
+
+for r in region:
+	if r not in regions:
+		regions[r] = 1
+	else:
+		print("Bad boi", r)
 
 bus_ids = []
 
@@ -34,44 +44,47 @@ avg_five = 0
 wout = open("fakeout/rev_fake", "w+")
 
 for j in json_data:
-	review = json.loads(j)
 
-	rid = review["review_id"]
-	bid = review["business_id"]
-	uid = review["user_id"]
-	stars = review["stars"]
-	text = review["text"]
-	print(rid)
-	print(bid)
-	print(uid)
-	print(stars)
-	print(text)
+	if j in regions:
 
-	if bid not in bus_data:
-		bus_ids.append(bid)
-		bus_data[bid] = [0, 0, 0, 0, 0]
+		review = json.loads(j)
 
-		total_bus += 1
+		rid = review["review_id"]
+		bid = review["business_id"]
+		uid = review["user_id"]
+		stars = review["stars"]
+		text = review["text"]
+		print(rid)
+		print(bid)
+		print(uid)
+		print(stars)
+		print(text)
 
-	if review["stars"] == 5:
-		bus_data[bid][4] += 1
-		total_five += 1
-	elif review["stars"] == 4:
-		bus_data[bid][3] += 1
-		total_four += 1
-	elif review["stars"] == 3:
-		bus_data[bid][2] += 1
-		total_three += 1
-	elif review["stars"] == 2:
-		bus_data[bid][1] += 1
-		total_two += 1
-	elif review["stars"] == 1:
-		bus_data[bid][0] += 1
-		total_one += 1
-	else:
-		print("Error on stars")
+		if bid not in bus_data:
+			bus_ids.append(bid)
+			bus_data[bid] = [0, 0, 0, 0, 0]
 
-	total_rev += 1
+			total_bus += 1
+
+		if review["stars"] == 5:
+			bus_data[bid][4] += 1
+			total_five += 1
+		elif review["stars"] == 4:
+			bus_data[bid][3] += 1
+			total_four += 1
+		elif review["stars"] == 3:
+			bus_data[bid][2] += 1
+			total_three += 1
+		elif review["stars"] == 2:
+			bus_data[bid][1] += 1
+			total_two += 1
+		elif review["stars"] == 1:
+			bus_data[bid][0] += 1
+			total_one += 1
+		else:
+			print("Error on stars")
+
+		total_rev += 1
 
 print("\nTotal rev / Sum Total revs")
 

@@ -1,3 +1,4 @@
+# Used to generate a map of business locations
 import json, plotly
 
 json_data = open("yelp_dataset/yelp_academic_dataset_business.json").readlines()
@@ -11,16 +12,12 @@ wout = open("yelp12/plot_map", "w+")
 
 for j in json_data:
 	business = json.loads(j)
-	# print(business["business_id"])
-	# print(business["latitude"])
-	# print(business["longitude"])
 
 	if business["latitude"] != None and business["longitude"] != None:
 
 		lat = float(business["latitude"])
 		lon = float(business["longitude"])
 
-		# wout.write(str(lat) + "\t" + str(lon) + "\n")
 		wout.write(str(lon) + "\t" + str(lat) + "\n")
 
 		if lat < minlat:
@@ -37,5 +34,3 @@ print("MINLAT:", minlat)
 print("MAXLAT:", maxlat)
 print("MINLONG:", minlon)
 print("MAXLONG:", maxlon)
-
-# print(json_data)
