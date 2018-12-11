@@ -29,31 +29,31 @@ My entry for the Yelp Dataset Challenge Round 12
 Assess shape of data:
 
 * [x] Number of Businesses
-* [] Number of Businesses / urban area
+* [ ] Number of Businesses / urban area
 * [x] Max number of reviews
 * [x] Avg number of reviews
 * [x] Max and Avg reviews per star
 * [x] Find Businesses with similar number of reviews per stars
-  * [] May not have similar number of reviews per star
+  * [ ] May not have similar number of reviews per star
 * [x] Business with minimum number of review per star
-* [] Minimum Reviews for 1 and 5 or 2 and 4
-* [] Review Length
-* [] Words per review
-* [] Make a plot of words per review
-* []Set summary length to some length beyond avg
+* [ ] Minimum Reviews for 1 and 5 or 2 and 4
+* [ ] Review Length
+* [ ] Words per review
+* [ ] Make a plot of words per review
+* [ ]Set summary length to some length beyond avg
 
 Also:
 
-* [] Find business types
-* [] Maybe use businesses from different types during iterations
+* [ ] Find business types
+* [ ] Maybe use businesses from different types during iterations
 
 ### Summarize Reviews
 
-* [] Use TFIDF methods
-* [] Key Tokens (Topic)
-* [] Representative Review
-* [] Extractive Summary
+* [ ] Use TFIDF methods
+* [ ] Key Tokens (Topic)
+* [ ] Representative Review
+* [ ] Extractive Summary
   * Possibly use useful, funny, or cool in weighting metric
-* [] Generate one summary with RNN method
+* [ ] Generate one summary with RNN method
 
-* [] Apply these methods on the Star rating and Business level
+* [ ] Apply these methods on the Star rating and Business level
