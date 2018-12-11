@@ -40,7 +40,7 @@ Assess shape of data:
 * [ ] Review Length
 * [ ] Words per review
 * [ ] Make a plot of words per review
-* [ ]Set summary length to some length beyond avg
+* [ ] Set summary length to some length beyond avg
 
 Also:
 
