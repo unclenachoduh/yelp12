@@ -15,8 +15,8 @@ My entry for the Yelp Dataset Challenge Round 12
 
 ### Access Data
 
-[x] Access the data as a quickly traversable json.
-[x] Stream review JSON due to length (5,000,000+ lines)
+* [x] Access the data as a quickly traversable json.
+* [x] Stream review JSON due to length (5,000,000+ lines)
 
 ### Sort Data by Metropolitan Area
 
