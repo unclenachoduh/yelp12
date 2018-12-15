@@ -36,9 +36,9 @@ Assess shape of data:
 * [x] Find Businesses with similar number of reviews per stars
   * [ ] May not have similar number of reviews per star
 * [x] Business with minimum number of review per star
-* [ ] Minimum Reviews for 1 and 5 or 2 and 4
-* [ ] Review Length
-* [ ] Words per review
+* [x] Minimum Reviews for 1 and 5 or 2 and 4
+* [x] Review Length
+* [x] Words per review
 * [ ] Make a plot of words per review
 * [ ] Set summary length to some length beyond avg
 
