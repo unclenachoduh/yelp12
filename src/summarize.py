@@ -48,12 +48,16 @@ four_wd = {}
 five_words = []
 five_wd = {}
 
+one_unq_sents = []
+
+one_unq = []
+
 i = 0
 while line:
 	review_struct = json.loads(line)
 
 	rid = review_struct["review_id"]
-	text = review_struct["text"]
+	text = review_struct["text"].lower()
 	star = review_struct["stars"]
 
 	tokens = nltk.word_tokenize(text)
@@ -87,6 +91,20 @@ while line:
 			borrowed_list = one_wd[word]
 			borrowed_list[1] += 1
 			one_wd[word] = borrowed_list
+
+		
+		one_unq.append([text, local_words])
+
+
+
+		for sent in sentences:
+			sent_tokens = nltk.word_tokenize(sent)
+			unq_sent_tokens = []
+			for s in sent_tokens:
+				if s not in unq_sent_tokens:
+					unq_sent_tokens.append(s)
+
+			one_unq_sents.append([sent, unq_sent_tokens])
 
 	elif star == 2:
 		two_count += 1
@@ -142,7 +160,7 @@ while line:
 	line = json_data.readline()
 
 
-print("ONE TOPIC WORDS")
+# print("ONE TOPIC WORDS")
 one_tfid = {}
 
 for w in one_words:
@@ -152,38 +170,104 @@ for w in one_words:
 
 	# one_tfid[w] = tfdf * (1 / one_wd[w][1])
 
-	one_tfid[w] = (1 / one_wd[w][0]) * (one_wd[w][1])
+	gen_score = (1 / one_wd[w][0]) * (one_wd[w][1])
 
-one_scores = sorted(one_tfid.items(), key=operator.itemgetter(1), reverse=True)
+	one_tfid[w] = gen_score
 
-cc = 0
-for score in one_scores:
-	print(score)
-	cc += 1
-	if cc > 50:
-		break
+# one_scores = sorted(one_tfid.items(), key=operator.itemgetter(1), reverse=False)
+
+# cc = 0
+# for score in one_scores:
+# 	if score[1] != 1.0:
+# 		print(score)
+# 	cc += 1
+	# if cc > 50:
+	# 	break
+
+# Set length of generated summary to 1.25 of average 
+one_sum_length = (one_wc/one_count) * 1.25
+
+print("")
+print("REPRESENTATIVE SUMMARY")
+
+rep_rev_dict = {}
+
+for oner in one_unq:
+	rep_rev_score = 0
+	for w in oner[1]:
+		rep_rev_score += one_tfid[w]
+
+	if len(oner[1]) < (one_wc/one_count):
+
+		rep_rev_dict[oner[0]] = rep_rev_score
 
 
-print("FIVE TOPIC WORDS")
-five_tfid = {}
+rep_rev_results = sorted(rep_rev_dict.items(), key=operator.itemgetter(1), reverse=True)
 
-for w in five_words:
-	# print(w, one_wd[w])
+# ccc = 0
+# for x in rep_rev_results:
+# 	print(x)
+# 	ccc += 1
+# 	if ccc > 10:
+# 		break
 
-	# tfdf = (one_wd[w][0]) * (one_wd[w][1])
+print(rep_rev_results[0][0])
 
-	# one_tfid[w] = tfdf * (1 / one_wd[w][1])
+print("")
 
-	five_tfid[w] = (1 / five_wd[w][0]) * (five_wd[w][1])
+print("EXTRACTIVE SUMMARY")
 
-five_scores = sorted(five_tfid.items(), key=operator.itemgetter(1), reverse=True)
+ext_sum_dict = {}
 
-cc = 0
-for score in five_scores:
-	print(score)
-	cc += 1
-	if cc > 50:
-		break
+for ones in one_unq_sents:
+	ext_sum_score = 0
+	for w in ones[1]:
+		if w in one_tfid:
+			ext_sum_score += one_tfid[w]
+
+	if len(ones[1]) < (one_wc/one_count):
+
+		ext_sum_dict[ones[0]] = ext_sum_score
+
+
+ext_sum_results = sorted(ext_sum_dict.items(), key=operator.itemgetter(1), reverse=True)
+
+ext_sum_len = 0
+ext_sum_arr = []
+
+for s in ext_sum_results:
+	tokes = nltk.word_tokenize(s[0])
+
+	if ext_sum_len + len(tokes) < one_sum_length:
+		ext_sum_arr.append(s[0])
+		ext_sum_len += len(tokes)
+
+ext_sum = "\n".join(ext_sum_arr)
+
+print(ext_sum)
+
+# print("FIVE TOPIC WORDS")
+# five_tfid = {}
+
+# for w in five_words:
+# 	# print(w, one_wd[w])
+
+# 	# tfdf = (one_wd[w][0]) * (one_wd[w][1])
+
+# 	# one_tfid[w] = tfdf * (1 / one_wd[w][1])
+
+# 	five_tfid[w] = (1 / five_wd[w][0]) * (five_wd[w][1])
+
+# five_scores = sorted(five_tfid.items(), key=operator.itemgetter(1), reverse=True)
+
+# cc = 0
+# for score in five_scores:
+# 	print(score)
+# 	cc += 1
+# 	if cc > 50:
+# 		break
+
+
 #####################################
 ### ANALYTICS
 
