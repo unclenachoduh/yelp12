@@ -4,12 +4,7 @@ My entry for the Yelp Dataset Challenge Round 12
 
 ## Current
 
-* [ ] Set up abstractive summarization model
-  * [ ] Simple text generator
-
-* Try weighting "useful". If useful, add 1/useful to TF instead of 1
-
-* Try using models from other stars for weighting (idf, itf, or discriminating against others)
+* [ ] Find a better abstractive system
 
 * Reevaluate necessary analytics
 * Select and isolate experiement data
@@ -56,11 +51,13 @@ Also:
 
 ### Summarize Reviews
 
-* [ ] Use TFIDF methods
-* [ ] Key Tokens (Topic)
-* [ ] Representative Review
-* [ ] Extractive Summary
+* [x] Use TFIDF methods
+* [x] Key Tokens (Topic)
+* [x] Representative Review
+* [x] Representative Sentence
+* [x] Extractive Summary
   * Possibly use useful, funny, or cool in weighting metric
-* [ ] Generate one summary with RNN method
+* [x] Generate one summary with RNN method
+  * [ ] Improve this method
 
 * [ ] Apply these methods on the Star rating and Business level
