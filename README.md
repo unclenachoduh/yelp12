@@ -4,12 +4,12 @@ My entry for the Yelp Dataset Challenge Round 12
 
 ## Current
 
-* [ ] Redo model building
-  * [ ] At first processing, start with sentence parser, then token parser and add tokens to sentence model and review model
-* [ ] Build summary APIs and call
-* [ ] Build CLASSY summarization model: generate new scores after each sentence selection
 * [ ] Set up abstractive summarization model
   * [ ] Simple text generator
+
+* Try weighting "useful". If useful, add 1/useful to TF instead of 1
+
+* Try using models from other stars for weighting (idf, itf, or discriminating against others)
 
 * Reevaluate necessary analytics
 * Select and isolate experiement data
