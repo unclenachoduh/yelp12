@@ -73,4 +73,4 @@ def words(model, all_model, ind):
 			topic_words.append(score[0])
 			limit -= 1
 
-	return [topic_words, itfdf, tfdf_idf]
+	return [topic_words, scoring_metric]

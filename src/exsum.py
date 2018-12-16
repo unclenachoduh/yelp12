@@ -1,14 +1,14 @@
 # Returns a an extractive summary from the data based on the CLASSY model
 import operator
 
-def calc_scores(model, itf, remaining_space, short, black_list):
+def calc_scores(model, weight, remaining_space, short, black_list):
 	sum_dict = {}
 
 	for sent in model[2]:
 		sent_score = 0
 		for t in model[3][sent]:
-			if t not in black_list and t in itf:
-				sent_score += itf[t]
+			if t not in black_list and t in weight:
+				sent_score += weight[t]
 
 		if len(model[3][sent]) < remaining_space and len(model[3][sent])  > 5:
 
@@ -22,9 +22,9 @@ def calc_scores(model, itf, remaining_space, short, black_list):
 
 	return [results[0][0], short] 
 
-def summary(model, itf):
+def summary(model, weight):
 
-	max_len = 100
+	max_len = 50
 
 	remaining_space = max_len
 
@@ -37,7 +37,7 @@ def summary(model, itf):
 
 	while remaining_space > smallest:
 
-		results = calc_scores(model, itf, remaining_space, smallest, black_list)
+		results = calc_scores(model, weight, remaining_space, smallest, black_list)
 
 		sum_sents.append(results[0])
 		remaining_space -= len(model[3][results[0]])

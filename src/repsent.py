@@ -1,7 +1,7 @@
 # Returns a representative sentence from the data based on ITFDF score per token
 import operator
 
-def sentence(model, itf):
+def sentence(model, weight):
 
 	rep_sent_dict = {}
 
@@ -10,9 +10,9 @@ def sentence(model, itf):
 		rep_sent_score = 0
 		
 		for t in model[3][sent]:
-			rep_sent_score += itf[t]
+			rep_sent_score += weight[t]
 
-		if len(model[3][sent]) < (model[8]/model[7]):
+		if len(model[3][sent]) < (model[8]/model[7]) * 2:
 
 			rep_sent_dict[sent] = rep_sent_score
 
