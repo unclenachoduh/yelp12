@@ -4,6 +4,15 @@ My entry for the Yelp Dataset Challenge Round 12
 
 ## Current
 
+* [ ] Order Extracted Sentences
+* [ ] Analyze contents of reviews
+  * [ ] Best business first, manageable businesses next
+  * [ ] Tally topics covered in reviews
+  * [ ] Order topics by tally count
+  * [ ] Identify the number of high-ranking topics covered in summary per star
+  * [ ] Maybe create a scoring method (1st = 10 pts, 2nd = 9 pts, etc)
+* Compile final report and document the code
+
 * [ ] Find a better abstractive system
 
 * Reevaluate necessary analytics
