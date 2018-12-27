@@ -48,9 +48,13 @@ In addition to the score for the generated summary, a set of random summaries ar
 ### Manual Revision
 
 **ID:** VUtazCTIc0aoOrQprP_s-Q
-**Reviews:** *1 Star:* 124, *2 Star:* 108, *3 Star:* 108, *4 Star:* 147, *5 Star:* 123
 
-Generated score:
+**Number of Reviews**  
+| 1 Star | 2 Star | 3 Star | 4 Star | 5 Star |
+| - | - | - | - | - |
+| 124 | 108 | 108 | 147 | 123| 
+
+**Generated score:**
 
 ### Coverage Analysis Script
 
@@ -58,8 +62,12 @@ Generated score:
 
 Businesses with 50-99 reviews per star
 
-Wins:
-Average Scores: Generated: #, Random: #
+**System Wins:** 92 / 150
+
+**Average Coverage**  
+| Generated | Random |
+| - | - |
+| 5.96% | 5.33 |
 
 #### Batch of 8 Businesses
 
