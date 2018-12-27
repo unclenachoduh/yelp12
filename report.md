@@ -22,6 +22,10 @@ _The results of creating a TF\*IDF-based extractive summarization system for the
 
 #### Evaluation
 
+Stop words and punctuation (clean for meaningful "terms")
+
+For generated results, calculate difference in "terms" (% coverage = ~ terms)
+
 ### Performance
 
 ## Discussion
