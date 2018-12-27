@@ -23,8 +23,8 @@ Because Yelp Dataset Challenge participants must keep the dataset confidential, 
 
 Currently, the systems operates from outside of the main folder, `yelp12`. The unzipped dataset folder should be in `yelp12`'s parent folder.
 
-In this parent folder, use the command:
-`python3 yelp12/src/main.py <business_id>` 
+In this parent folder, use the command:  
+`python3 yelp12/src/main.py <business_id>`   
 to generate summaries.
 
 `<business_id>` is the unique identifier for a business found in the dataset.
