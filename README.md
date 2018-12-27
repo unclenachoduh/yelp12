@@ -10,14 +10,9 @@ This system summarizes the reviews for a business that can be found in the Yelp 
 
 For each busisness, five summaries are generated: one fore each star rating. The summaries are generated from the collection of reviews of a star rating by weighting words found in reviews of that star rating heavier and weighting words found in reviews of other star ratings for the same business.
 
-## Dependencies
-
-Python 3  
-[NLTK](https://www.nltk.org/) (This system relies heavily on NLTK's tokenization packages.)
-
-This system was built on Ubuntu 18.4.1.
-
 ## Running the System
+
+Make sure you meet [system requirements](#Dependencies).
 
 Because Yelp Dataset Challenge participants must keep the dataset confidential, the structure of this repo is not ideal.
 
@@ -45,6 +40,8 @@ In addition to the score for the generated summary, a set of 10 random summaries
 
 ## System Performance
 
+Performance was assessed manually for one business and with the coverage script for 40 businesses.
+
 ### Manual Revision
 
 **ID:** VUtazCTIc0aoOrQprP_s-Q
@@ -59,7 +56,7 @@ In addition to the score for the generated summary, a set of 10 random summaries
 
 *description needed*
 
-**Coverage Analysis Script**
+**Coverage Analysis Comparison**
 
 | | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star | Avg. |
 | - | - | - | - | - | - | - |
@@ -67,7 +64,9 @@ In addition to the score for the generated summary, a set of 10 random summaries
 | Random | 2.82% | 3.48% | 3.43% | 3.20% | 3.13% | 3.22% |
 
 
-### Coverage Analysis Script
+### Results from Coverage Analysis Script
+
+Results for the 40 businesses assessed with the coverage analysis script.
 
 #### Batch of 30 Businesses
 
@@ -102,6 +101,13 @@ The weighting metric used is a modified [TF\*IDF](https://en.wikipedia.org/wiki/
 My system uses a (TF\*DF) \* (ITF\*IDF) weighting metric, where TF\*DF is the term frequency and document frequency in reviews with the star rating being summaried, and ITF\*IDF is the inverse of each in reviews of all other star ratings.
 
 This weighting rewards terms that unique to the reviews of the star rating being summarized and should help identify the reason a Yelp reviewers give certain star ratings.
+
+## Dependencies
+
+Python 3  
+[NLTK](https://www.nltk.org/) (This system relies heavily on NLTK's tokenization packages.)
+
+This system was built on Ubuntu 18.4.1.
 
 ## TODO
 
