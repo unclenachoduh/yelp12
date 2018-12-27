@@ -41,7 +41,7 @@ However, this system includes a simple coverage analysis script that demonstrate
 
 This analysis compiles up to n-grams up to 3 of all reviews used to generate a summary and of the summary itself. These n-grams comprise only sequences that do not contain common stop words or punctuation. The score is simply the percent of these rudimentary terms that are present in the summary.
 
-In addition to the score for the generated summary, a set of random summaries are generated from the source reviews and the score is calculated for these summaries as well for comparision with the system.
+In addition to the score for the generated summary, a set of 10 random summaries are generated from the source reviews and the score is calculated for these summaries as well for comparision with the system.
 
 ## System Performance
 
@@ -53,33 +53,18 @@ In addition to the score for the generated summary, a set of random summaries ar
 
 | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star |
 | - | - | - | - | - |
-| 124 | 108 | 108 | 147 | 123| 
+| 124 | 108 | 108 | 147 | 123 |
 
-**Coverage**
+**Results**
+
+*description needed*
+
+**Coverage Analysis Script**
 
 | | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star | Avg. |
 | - | - | - | - | - | - | - |
 | Generated | 2.85% | 4.93% | 4.80% | 2.52% | 4.44% | 3.91% |
 | Random | 2.82% | 3.48% | 3.43% | 3.20% | 3.13% | 3.22% |
-
-EXT_SUM:0.028485541232217405
-RANDOM: 0.02818371731768841
-
-EXT_SUM:0.04925790374424588
-RANDOM: 0.03481051948927388
-
-EXT_SUM:0.04801320599831233
-RANDOM: 0.034274078252901
-
-EXT_SUM:0.02521965450498947
-RANDOM: 0.03202518186677586
-
-EXT_SUM:0.04435626095357404
-RANDOM: 0.03193140332220821
-
-AVGERAGE:
-EXT SUM: 0.039066513286667826
-RANDOM:  0.03224498004976947
 
 
 ### Coverage Analysis Script
@@ -94,14 +79,19 @@ Businesses with 50-99 reviews per star
 
 | Generated | Random |
 | - | - |
-| 5.96% | 5.33 |
+| 5.96% | 5.33% |
 
 #### Batch of 8 Businesses
 
 Businesses with 100-150, 100-200, or 150-250 reviews per star
 
-Wins:
-Average Scores: Generated: #, Random: #
+**System Wins:** # / #
+
+**Average Scores:**
+
+| Generated | Random |
+| - | - |
+| #.##% | #.##% |
 
 ## TF\*IDF
 
