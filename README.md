@@ -58,7 +58,7 @@ In addition to the score for the generated summary, a set of random summaries ar
 **Coverage**
 
 | | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star | Avg. |
-| - | - | - | - | - | - |
+| - | - | - | - | - | - | - |
 | Generated | 2.85% | 4.93% | 4.80% | 2.52% | 4.44% | 3.91% |
 | Random | 2.82% | 3.48% | 3.43% | 3.20% | 3.13% | 3.22% |
 
