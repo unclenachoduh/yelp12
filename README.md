@@ -111,37 +111,22 @@ This system was built on Ubuntu 18.4.1.
 
 ## TODO
 
+* [ ] Move Analytics data to repo
+  * [ ] Use analytics for write up
+
 * [ ] Analyze contents of reviews
-  * [ ] Only 1 and 5 for three businesses
-  	* [ ] 2 and 4 if have time
-  * [ ] Best business first, manageable businesses next
-  	* VUtazCTIc0aoOrQprP_s-Q 100-149
-  	* 2 from 50-99
+  * [ ] VUtazCTIc0aoOrQprP_s-Q 100-149
   * [ ] Tally topics covered in reviews
   * [ ] Order topics by tally count
   * [ ] Identify the number of high-ranking topics covered in summary per star
   * [ ] Maybe create a scoring method 
   	* 1st = 10 pts, 2nd = 9 pts, etc
   	* 1 / place ( 1st = 1/1, 2nd = 1/2, ect.)
-* Compile final report and document the code
 
-* [ ] Automated analysis system
-  * [ ] Get n-grams from 1 to 3 from source reviews and summary, eliminating meaningless tokens (grams where 50% or more tokens are meaningless) 
-  * order grams from source from most common to least common
-  * Create scoring metric (as seen above)
-  * Generate score for extractive summary
-  * Generate score for summary generated at random
-  * Compare scores from summaries to determine if my summary is valuable
-  * (For each repeated mention, divide score in half before adding)
+* [ ] Compile final report and document the code
 
-* [ ] Find a better abstractive system
-
-* Reevaluate necessary analytics
-* Select and isolate experiement data
-  * 1 business with 100-150 reviews per star
-  * 2 businesses with 150-250 reviews per star
-  * 8 businesses with 100-200 reviews per star
-  * 30 with 50-99 and 97 with 50-150
+* [ ] Clean up repo
+* [ ] Move tools to another repo
 
 ## Milestones
 
