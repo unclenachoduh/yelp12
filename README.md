@@ -1,6 +1,6 @@
 # Yelp Dataset Challenge Round 12 Entry
 
-A TF\*IDF summarization system for Yelp reviews.
+A TF\*IDF extractive summarization system for Yelp reviews.
 
 Read the [full report](report.md).
 
@@ -12,8 +12,8 @@ For each busisness, five summaries are generated: one fore each star rating. The
 
 ## Dependencies
 
-Python 3
-NLTK (This system relies heavily on NLTK's tokenization packages.)
+Python 3  
+[NLTK](https://www.nltk.org/) (This system relies heavily on NLTK's tokenization packages.)
 
 This system was built on Ubuntu 18.4.1.
 
@@ -24,14 +24,14 @@ Because Yelp Dataset Challenge participants must keep the dataset confidential, 
 Currently, the systems operates from outside of the main folder, `yelp12`. The unzipped dataset folder should be in `yelp12`'s parent folder.
 
 In this parent folder, use the command:  
-`python3 yelp12/src/main.py <business_id>`   
+`python3 yelp12/src/main.py <business_id>`  
 to generate summaries.
 
 `<business_id>` is the unique identifier for a business found in the dataset.
 
-Many businesses can be summarized at once with the command:
-`python3 yelp12/src/main.py -b <business_file>`
-where `<business_file.` is a file containing the IDs of several businesses on separate lines. [FILE](recommended_businesses.txt) contains some IDs that are recommended based on the similar number of reviews per star rating.
+Many businesses can be summarized at once with the command:  
+`python3 yelp12/src/main.py -b <business_file>`  
+where `<business_file.` is a file containing the IDs of several businesses on separate lines. [recommended_businesses.txt](recommended_businesses.txt) contains some IDs that are recommended based on the similar number of reviews per star rating.
 
 ## Evaluating Summaries
 
@@ -47,10 +47,10 @@ In addition to the score for the generated summary, a set of random summaries ar
 
 ### Manual Revision
 
-ID: 
-Reviews: 1 Star: #, 2 Star: #, 3 Star: #, 4 Star:#, 5 Star: #
+**ID:** VUtazCTIc0aoOrQprP_s-Q
+**Reviews:** *1 Star:* 124, *2 Star:* 108, *3 Star:* 108, *4 Star:* 147, *5 Star:* 123
 
-Generated score
+Generated score:
 
 ### Coverage Analysis Script
 
