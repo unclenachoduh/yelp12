@@ -55,7 +55,32 @@ In addition to the score for the generated summary, a set of random summaries ar
 | - | - | - | - | - |
 | 124 | 108 | 108 | 147 | 123| 
 
-**Generated score:**
+**Coverage**
+
+| | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star | Avg. |
+| - | - | - | - | - | - |
+| Generated | 2.85% | 4.93% | 4.80% | 2.52% | 4.44% | 3.91% |
+| Random | 2.82% | 3.48% | 3.43% | 3.20% | 3.13% | 3.22% |
+
+EXT_SUM:0.028485541232217405
+RANDOM: 0.02818371731768841
+
+EXT_SUM:0.04925790374424588
+RANDOM: 0.03481051948927388
+
+EXT_SUM:0.04801320599831233
+RANDOM: 0.034274078252901
+
+EXT_SUM:0.02521965450498947
+RANDOM: 0.03202518186677586
+
+EXT_SUM:0.04435626095357404
+RANDOM: 0.03193140332220821
+
+AVGERAGE:
+EXT SUM: 0.039066513286667826
+RANDOM:  0.03224498004976947
+
 
 ### Coverage Analysis Script
 
