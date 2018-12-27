@@ -81,17 +81,17 @@ Businesses with 50-99 reviews per star
 | - | - |
 | 5.96% | 5.33% |
 
-#### Batch of 8 Businesses
+#### Batch of 10 Businesses
 
 Businesses with 100-150, 100-200, or 150-250 reviews per star
 
-**System Wins:** # / #
+**System Wins:** 35 / 50
 
 **Average Scores:**
 
 | Generated | Random |
 | - | - |
-| #.##% | #.##% |
+| 3.31% | 2.86% |
 
 ## TF\*IDF
 
