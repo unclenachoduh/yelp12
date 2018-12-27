@@ -49,7 +49,8 @@ In addition to the score for the generated summary, a set of random summaries ar
 
 **ID:** VUtazCTIc0aoOrQprP_s-Q
 
-**Number of Reviews**  
+**Number of Reviews**
+
 | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star |
 | - | - | - | - | - |
 | 124 | 108 | 108 | 147 | 123| 
@@ -64,7 +65,8 @@ Businesses with 50-99 reviews per star
 
 **System Wins:** 92 / 150
 
-**Average Coverage**  
+**Average Coverage**
+
 | Generated | Random |
 | - | - |
 | 5.96% | 5.33 |
