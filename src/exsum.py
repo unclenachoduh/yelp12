@@ -12,7 +12,7 @@ def calc_scores(model, weight, remaining_space, short, black_list):
 
 		if len(model[3][sent]) < remaining_space and len(model[3][sent])  > 5:
 
-			sum_dict[sent] = sent_score
+			sum_dict[sent] = sent_score * (1 + model[9][sent])
 
 			if len(model[3][sent]) < short:
 				short = len(model[3][sent])
@@ -24,7 +24,7 @@ def calc_scores(model, weight, remaining_space, short, black_list):
 
 def summary(model, weight):
 
-	max_len = 50
+	max_len = 75
 
 	remaining_space = max_len
 

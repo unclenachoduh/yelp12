@@ -6,9 +6,6 @@ import json, sys, operator, os
 # Local Packages
 import build_model, topic, reprev, repsent, exsum
 
-# Text Generation Packages
-# import absum
-
 # External Packages
 import nltk
 

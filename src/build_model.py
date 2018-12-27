@@ -18,6 +18,7 @@ import nltk
 # 6: COUNT of REVIEWS (aka documents)
 # 7: COUNT of SENTENCES
 # 8: COUNT of TOKENS
+# 9: DICTIONARY k=SENTENCE, v=sent tokens / review tokens
 
 def get_deets(raw_ind, text, useful, master2):
 
@@ -62,15 +63,31 @@ def get_deets(raw_ind, text, useful, master2):
 
 			master2[i][8] += 1
 
-		master2[i][2].append(sentence)
-		master2[i][3][sentence] = sent_tokens
+		if len(sent_tokens) > 0:
 
-		master2[i][7] += 1
+			master2[i][2].append(sentence)
+			master2[i][3][sentence] = sent_tokens
+
+			master2[i][7] += 1
 
 	for token in doc_tokens:
 		borrowed_list = master2[i][1][token]
 		borrowed_list[1] += 1
 		master2[i][1][token] = borrowed_list
+
+	for sentence in sentences:
+		if sentence in master2[i][3]:
+			temporary = master2[i][3][sentence]
+			perc = len(temporary) / len(doc_tokens)
+			master2[i][9][sentence] = perc
+
+			if len(temporary) == 0:
+				print("SENTENCE", len(doc_tokens))
+				print(len(temporary), temporary)
+
+
+
+
 
 	# count of reviews
 	master2[i][6] += 1
@@ -107,7 +124,7 @@ def analytics(business_id, master):
 
 	wout.write("AVG: " + str(all_tc/all_rc) + "\n")
 
-	wout.write("\nAVERAGE REVIEW LENGTH:\n")
+	wout.write("\nAVERAGE SENTENCE LENGTH:\n")
 	count = 1
 	for m in master:
 		wout.write(str(count) + " Star: " + str(m[8]/m[7]) + "\n")
@@ -119,11 +136,11 @@ def analytics(business_id, master):
 def build(filename, business_id, run_an):
 
 	master = [
-	[[], {}, [], {}, [], {}, 0, 0, 0], 
-	[[], {}, [], {}, [], {}, 0, 0, 0], 
-	[[], {}, [], {}, [], {}, 0, 0, 0], 
-	[[], {}, [], {}, [], {}, 0, 0, 0], 
-	[[], {}, [], {}, [], {}, 0, 0, 0]]
+	[[], {}, [], {}, [], {}, 0, 0, 0, {}], 
+	[[], {}, [], {}, [], {}, 0, 0, 0, {}],
+	[[], {}, [], {}, [], {}, 0, 0, 0, {}],
+	[[], {}, [], {}, [], {}, 0, 0, 0, {}],
+	[[], {}, [], {}, [], {}, 0, 0, 0, {}]]
 
 	json_data = open(filename)
 
