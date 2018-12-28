@@ -1,6 +1,6 @@
 # Extractive Summarization on Yelp Reviews
 
-**Kekoa Riggin**  
+<p aling="center" >**Kekoa Riggin**</p>  
 University of Washington  
 kekoar@uw.edu
 
