@@ -13,8 +13,8 @@ for word in stopwords_source:
 	for token in tokens:
 		nltk_stopwords[token] = 1
 
-json_file = "yelp_dataset/yelp_academic_dataset_review.json"
-# json_file = "output/VUtazCTIc0aoOrQprP_s-Q.json"
+# json_file = "yelp_dataset/yelp_academic_dataset_review.json"
+json_file = "output/VUtazCTIc0aoOrQprP_s-Q.json"
 
 files = []
 

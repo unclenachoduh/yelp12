@@ -39,7 +39,7 @@ for bus_id in businesses:
 
 		model_num = 0
 
-		wout = open("output/SUMMARY_" + bus_id, "w+")
+		wout = open("output/TEST_SUMMARY_" + bus_id, "w+")
 
 		wout.write("YELP12 OUTPUT FOR BUSINESS: " + bus_id + "\n\n")
 
