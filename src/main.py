@@ -26,7 +26,7 @@ else:
 	raise ValueError("Bad arguments. Should be '[bus_id]' or '-b [bus_file]'")
 
 
-run_analytics = False
+run_analytics = True
 
 for bus_id in businesses:
 
@@ -39,7 +39,7 @@ for bus_id in businesses:
 
 		model_num = 0
 
-		wout = open("output/OUTPUT_" + bus_id, "w+")
+		wout = open("output/TEST_SUMMARY_" + bus_id, "w+")
 
 		wout.write("YELP12 OUTPUT FOR BUSINESS: " + bus_id + "\n\n")
 

@@ -10,14 +10,9 @@ This system summarizes the reviews for a business that can be found in the Yelp 
 
 For each busisness, five summaries are generated: one fore each star rating. The summaries are generated from the collection of reviews of a star rating by weighting words found in reviews of that star rating heavier and weighting words found in reviews of other star ratings for the same business.
 
-## Dependencies
-
-Python 3  
-[NLTK](https://www.nltk.org/) (This system relies heavily on NLTK's tokenization packages.)
-
-This system was built on Ubuntu 18.4.1.
-
 ## Running the System
+
+Make sure you meet [system requirements](#Dependencies).
 
 Because Yelp Dataset Challenge participants must keep the dataset confidential, the structure of this repo is not ideal.
 
@@ -41,9 +36,11 @@ However, this system includes a simple coverage analysis script that demonstrate
 
 This analysis compiles up to n-grams up to 3 of all reviews used to generate a summary and of the summary itself. These n-grams comprise only sequences that do not contain common stop words or punctuation. The score is simply the percent of these rudimentary terms that are present in the summary.
 
-In addition to the score for the generated summary, a set of random summaries are generated from the source reviews and the score is calculated for these summaries as well for comparision with the system.
+In addition to the score for the generated summary, a set of 10 random summaries are generated from the source reviews and the score is calculated for these summaries as well for comparision with the system.
 
 ## System Performance
+
+Performance was assessed manually for one business and with the coverage script for 40 businesses.
 
 ### Manual Revision
 
@@ -53,36 +50,23 @@ In addition to the score for the generated summary, a set of random summaries ar
 
 | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star |
 | - | - | - | - | - |
-| 124 | 108 | 108 | 147 | 123| 
+| 124 | 108 | 108 | 147 | 123 |
 
-**Coverage**
+**Results**
+
+*description needed*
+
+**Coverage Analysis Comparison**
 
 | | 1 Star | 2 Star | 3 Star | 4 Star | 5 Star | Avg. |
 | - | - | - | - | - | - | - |
 | Generated | 2.85% | 4.93% | 4.80% | 2.52% | 4.44% | 3.91% |
 | Random | 2.82% | 3.48% | 3.43% | 3.20% | 3.13% | 3.22% |
 
-EXT_SUM:0.028485541232217405
-RANDOM: 0.02818371731768841
 
-EXT_SUM:0.04925790374424588
-RANDOM: 0.03481051948927388
+### Results from Coverage Analysis Script
 
-EXT_SUM:0.04801320599831233
-RANDOM: 0.034274078252901
-
-EXT_SUM:0.02521965450498947
-RANDOM: 0.03202518186677586
-
-EXT_SUM:0.04435626095357404
-RANDOM: 0.03193140332220821
-
-AVGERAGE:
-EXT SUM: 0.039066513286667826
-RANDOM:  0.03224498004976947
-
-
-### Coverage Analysis Script
+Results for the 40 businesses assessed with the coverage analysis script.
 
 #### Batch of 30 Businesses
 
@@ -94,14 +78,19 @@ Businesses with 50-99 reviews per star
 
 | Generated | Random |
 | - | - |
-| 5.96% | 5.33 |
+| 5.96% | 5.33% |
 
-#### Batch of 8 Businesses
+#### Batch of 10 Businesses
 
 Businesses with 100-150, 100-200, or 150-250 reviews per star
 
-Wins:
-Average Scores: Generated: #, Random: #
+**System Wins:** 35 / 50
+
+**Average Scores:**
+
+| Generated | Random |
+| - | - |
+| 3.31% | 2.86% |
 
 ## TF\*IDF
 
@@ -113,39 +102,31 @@ My system uses a (TF\*DF) \* (ITF\*IDF) weighting metric, where TF\*DF is the te
 
 This weighting rewards terms that unique to the reviews of the star rating being summarized and should help identify the reason a Yelp reviewers give certain star ratings.
 
+## Dependencies
+
+Python 3  
+[NLTK](https://www.nltk.org/) (This system relies heavily on NLTK's tokenization packages.)
+
+This system was built on Ubuntu 18.4.1.
+
 ## TODO
 
+* [ ] Move Analytics data to repo
+  * [ ] Use analytics for write up
+
 * [ ] Analyze contents of reviews
-  * [ ] Only 1 and 5 for three businesses
-  	* [ ] 2 and 4 if have time
-  * [ ] Best business first, manageable businesses next
-  	* VUtazCTIc0aoOrQprP_s-Q 100-149
-  	* 2 from 50-99
+  * [ ] VUtazCTIc0aoOrQprP_s-Q 100-149
   * [ ] Tally topics covered in reviews
   * [ ] Order topics by tally count
   * [ ] Identify the number of high-ranking topics covered in summary per star
   * [ ] Maybe create a scoring method 
   	* 1st = 10 pts, 2nd = 9 pts, etc
   	* 1 / place ( 1st = 1/1, 2nd = 1/2, ect.)
-* Compile final report and document the code
 
-* [ ] Automated analysis system
-  * [ ] Get n-grams from 1 to 3 from source reviews and summary, eliminating meaningless tokens (grams where 50% or more tokens are meaningless) 
-  * order grams from source from most common to least common
-  * Create scoring metric (as seen above)
-  * Generate score for extractive summary
-  * Generate score for summary generated at random
-  * Compare scores from summaries to determine if my summary is valuable
-  * (For each repeated mention, divide score in half before adding)
+* [ ] Compile final report and document the code
 
-* [ ] Find a better abstractive system
-
-* Reevaluate necessary analytics
-* Select and isolate experiement data
-  * 1 business with 100-150 reviews per star
-  * 2 businesses with 150-250 reviews per star
-  * 8 businesses with 100-200 reviews per star
-  * 30 with 50-99 and 97 with 50-150
+* [ ] Clean up repo
+* [ ] Move tools to another repo
 
 ## Milestones
 

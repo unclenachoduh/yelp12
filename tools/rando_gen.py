@@ -4,6 +4,7 @@ from random import shuffle
 
 import nltk
 
+
 # Stop words from Yoast SEO https://github.com/Yoast/YoastSEO.js/blob/develop/src/config/stopwords.js
 stopwords_source = ["a", "about", "above", "after", "again", "against", "all", "am", "an", "and", "any", "are", "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by", "could", "did", "do", "does", "doing", "down", "during", "each", "few", "for", "from", "further", "had", "has", "have", "having", "he", "he'd", "he'll", "he's", "her", "here", "here's", "hers", "herself", "him", "himself", "his", "how", "how's", "i", "i'd", "i'll", "i'm", "i've", "if", "in", "into", "is", "it", "it's", "its", "itself", "let's", "me", "more", "most", "my", "myself", "nor", "of", "on", "once", "only", "or", "other", "ought", "our", "ours", "ourselves", "out", "over", "own", "same", "she", "she'd", "she'll", "she's", "should", "so", "some", "such", "than", "that", "that's", "the", "their", "theirs", "them", "themselves", "then", "there", "there's", "these", "they", "they'd", "they'll", "they're", "they've", "this", "those", "through", "to", "too", "under", "until", "up", "very", "was", "we", "we'd", "we'll", "we're", "we've", "were", "what", "what's", "when", "when's", "where", "where's", "which", "while", "who", "who's", "whom", "why", "why's", "with", "would", "you", "you'd", "you'll", "you're", "you've", "your", "yours", "yourself", "yourselves"]
 nltk_stopwords = {}
@@ -107,9 +108,11 @@ def rand_sum(plain_lines, rev_len):
 		[[],[],[]],
 		[[],[],[]]]
 
+	text = ""
 	rand_count = 0
 	for index in plain_lines:
 		rand_len = 0
+		text += str(rand_count + 1) + " STAR SUMMARY\n\n"
 		shuffle(index)
 		i = 0
 		while rand_len < rev_len[rand_count] - 10:
@@ -117,6 +120,7 @@ def rand_sum(plain_lines, rev_len):
 			if rand_len + len(tokens) < rev_len[rand_count] + 20:
 				rand_len += len(tokens)
 
+				text += index[i] + "\n\n"
 				count = 0
 
 				r_count = 0
@@ -132,9 +136,11 @@ def rand_sum(plain_lines, rev_len):
 				break
 
 		rand_count +=1
-	return rand_tokes
+	
+		# print(text)
+	return [rand_tokes, text]
 
-wout = open("analysis_out.txt", "w+")
+wout = open("rando_analysis_out.txt", "w+")
 
 average = 0
 extractive = 0
@@ -182,6 +188,8 @@ for file in files:
 						for gram in gram_num:
 							ext_rev[ind][count].append(gram)
 						count += 1
+
+		print(rev_len)
 
 		if id_check == False:
 			raise ValueError("No Business ID found")
@@ -299,7 +307,7 @@ for file in files:
 				my_scores[master_count] = redscore(needscore, master[master_count])
 				master_count += 1
 
-			random_batch = [
+			random_first = [
 				rand_sum(plain_lines, rev_len), 
 				rand_sum(plain_lines, rev_len), 
 				rand_sum(plain_lines, rev_len), 
@@ -310,6 +318,18 @@ for file in files:
 				rand_sum(plain_lines, rev_len), 
 				rand_sum(plain_lines, rev_len), 
 				rand_sum(plain_lines, rev_len)]
+
+			random_batch = [
+				random_first[0][0],
+				random_first[1][0],
+				random_first[2][0],
+				random_first[3][0],
+				random_first[4][0],
+				random_first[5][0],
+				random_first[6][0],
+				random_first[7][0],
+				random_first[8][0],
+				random_first[9][0]]
 
 			rand_batch_scores = [0,0,0,0,0]
 
@@ -359,4 +379,15 @@ wout.write("\nEXTRACTIVE: " + str(sum(ext_avg)/len(ext_avg)))
 wout.write("\nRANDOM:     " + str( (sum(avg_avg)/ (len(avg_avg)) ) ) )
 
 
-
+random_text = random_first[0][1] + \
+	random_first[1][1] + \
+	random_first[2][1] + \
+	random_first[3][1] + \
+	random_first[4][1] + \
+	random_first[5][1] + \
+	random_first[6][1] + \
+	random_first[7][1] + \
+	random_first[8][1] + \
+	random_first[9][1]
+output_file = open("random_sums.txt", "w+")
+output_file.write(random_text)
