@@ -9,8 +9,8 @@ import build_model, topic, exsum
 # External Packages
 import nltk
 
-# json_file = "yelp_dataset/yelp_academic_dataset_review.json"
-json_file = "output/VUtazCTIc0aoOrQprP_s-Q.json"
+json_file = "yelp_dataset/yelp_academic_dataset_review.json"
+# json_file = "output/VUtazCTIc0aoOrQprP_s-Q.json"
 # bus_id = "VUtazCTIc0aoOrQprP_s-Q"
 # bus_id = sys.argv[1]
 
