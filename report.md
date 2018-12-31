@@ -132,6 +132,8 @@ In addition to further evaluation of this system, other summarization methods ar
 
 In a future study, this system could be improved by adding features that improve content selection or realization. Additionally, abstractive methods for summarization should be explored as a solution to the review summarization question. 
 
+*Access the project at https://github.com/unclenachoduh/yelp12*
+
 ## Sources
 
 * Extractive/Abstractive Summarization
