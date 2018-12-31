@@ -1,0 +1,359 @@
+1 STAR
+
+GOOD
+----
+food	24
+service	18
+uniform	18
+ambience	12
+music	6
+fries	6
+portions	6
+drinks	6
+dance	6
+
+BAD
+----
+service	19
+food	16
+food price	7
+drink price	6
+service wait	6
+food wait	6
+wait	5
+bartender	4
+management	3
+drinks	3
+nachos	3
+burger	3
+dirty	3
+food poisoning	3
+wrap	2
+mac n cheese	2
+ambience	2
+bar	2
+chicken fried steak	2
+ribs	2
+lunch	1
+quesadilla	1
+wings	1
+salad	1
+steak	1
+ruben	1
+uniform	1
+drink refill	1
+smoke	1
+fajitas	1
+meatloaf	1
+fish and chips	1
+chicken sandwhich	1
+pulled pork	1
+soup	1
+additional charge	1
+seafood	1
+chicken	1
+drink	1
+chili	1
+club	1
+salmon	1
+tortillas	1
+shrimp	1
+chicken strips	1
+sandwhich	1
+
+2 STAR
+
+GOOD
+----
+drinks	18
+service	12
+food	12
+ambience	11
+music	8
+uniform	7
+fries	6
+bartender	3
+bar	3
+bologna sandwhich	2
+shrimp	2
+nachos	2
+catfish	2
+menu	2
+food price	2
+wait	1
+salad	1
+chicken sandwhich	1
+bartnder	1
+wings	1
+buffalo cheese sticks	1
+turkey sandwhich	1
+meatloaf	1
+chicken strips	1
+burger	1
+drink price	1
+steak and prawns	1
+mac n cheese	1
+parking	1
+portions	1
+
+BAD
+----
+food	21
+service	14
+food price	8
+wait	5
+drink price	4
+food wait	4
+burger	4
+service wait	4
+mac n cheese	3
+uniform	3
+ambience	3
+ribs	3
+wings	3
+location	2
+music	2
+chicken fried steak	2
+wrap	2
+steak	2
+menu	2
+dirty	2
+nachos	2
+fries	2
+drinks	1
+fried pickles	1
+potato salad	1
+quesadilla	1
+pulled pork	1
+portions	1
+fajitas	1
+bologna sandwhich	1
+chicken tender	1
+chicken	1
+baked potato	1
+coleslaw	1
+tater tots	1
+sloppy joe	1
+lunch	1
+potato skins	1
+clothing	1
+gift shop	1
+gift card	1
+soup	1
+salad	1
+thanksgiving	1
+tacos	1
+fee	1
+sandwhich	1
+fish and chips	1
+bartender	1
+chicken sandwhich	1
+catfish	1
+fish and chis	1
+ruben	1
+bbq chicken	1
+pecan pie	1
+
+3 STAR
+
+GOOD
+----
+ambience	14
+music	12
+service	11
+drinks	9
+food	9
+uniform	6
+bartender	5
+burger	5
+mac n cheese	4
+nachos	4
+bar	3
+fries	3
+catfish	3
+wings	2
+drink price	2
+ruben	2
+pulled pork	2
+menu	2
+food price	2
+wrap	2
+bologna sandwhich	2
+cover	1
+chicken quesadilla	1
+portions	1
+tortilla soup	1
+chicken fried steak	1
+steak sandwhich	1
+burger 	1
+chicken tender	1
+fried twinkie	1
+fried pickles	1
+chicken	1
+steak	1
+
+BAD
+----
+food	18
+service	13
+drink price	12
+food price	9
+ambience	8
+service wait	5
+food wait	5
+location	5
+menu	5
+music	3
+wait	3
+wrap	3
+uniform	2
+steak	2
+chicken	2
+ribs	2
+portions	2
+shrimp	2
+burger	2
+nachos	2
+catfish	2
+drinks	2
+rotisserie chicken	1
+fish and chips	1
+cheesesteak	1
+atmosphere	1
+dirty	1
+mac n cheese	1
+wings	1
+meatloaf	1
+steak sandwhich	1
+
+4 STAR
+
+GOOD
+----
+food	15
+ambience	13
+drinks	11
+service	11
+music	8
+portions	5
+bartender	5
+burger	5
+mac n cheese	4
+nachos	3
+uniform	3
+wait	3
+wings	3
+steak	2
+food price	2
+pulled pork	2
+fries	2
+drink price	2
+bologna sandwhich	2
+bar	2
+chicken fried steak	2
+ribs	2
+cover	1
+wrap	1
+food wait	1
+fried twinkie	1
+salad	1
+menu	1
+food prices	1
+ruben	1
+fried pickles	1
+turkey club	1
+chicken	1
+ribeye	1
+sandwhich	1
+sloppy joe	1
+chicken strips	1
+okra	1
+shrimp	1
+service wait	1
+meat loaf	1
+tacos	1
+cheese sticks	1
+potato skins	1
+
+BAD
+----
+food price	18
+service	15
+uniform	11
+drink price	10
+food wait	9
+location	7
+bathroom	7
+menu	6
+wait	5
+service wait	5
+mac n cheese	5
+food	5
+drinks	3
+bologna sandwhich	2
+
+5 STAR
+
+GOOD
+----
+drinks	13
+service	13
+music	12
+ambience	11
+food	10
+bartender	8
+portions	4
+burger	4
+uniform	3
+fries	3
+mac n cheese	3
+wings	2
+bologna sandwhich	2
+food price	2
+ribs	2
+drink price	2
+fried pickles	2
+catfish	1
+food wait	1
+meatloaf	1
+chicken fried steak	1
+pulled pork	1
+salad	1
+bar	1
+quesadilla	1
+fried twinkie	1
+abience	1
+location	1
+wrap	1
+nachos	1
+shrimp	1
+bolonga sandwhich	1
+service wait	1
+turkey club	1
+dumplings	1
+tortilla soup	1
+poritons	1
+soup	1
+chicken tender	1
+portion	1
+menu	1
+fish and chips	1
+drink	1
+ambeince	1
+club sandwhich	1
+cover	1
+okra	1
+club	1
+fried pickled	1
+driks	1
+
+BAD
+----
+bathroom	31
+drink price	24
+service	16
+smoke	8
+uniform	8
+food price	8
+food	8
+

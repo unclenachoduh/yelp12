@@ -1,13 +1,12 @@
 VUtazCTIc0aoOrQprP_s-Q
 
-----
 ONE
 ----
 food
 service
 lunch
 nachos
-cowboy reuben
+ruben
 burger
 quesadilla
 chicken sandwhich
@@ -26,7 +25,8 @@ drink price
 service
 wait
 food wait
-food reuben
+food
+ruben
 service
 bar
 uniform
@@ -47,7 +47,7 @@ wait
 drink price
 quesadilla
 salad
-drink refills
+drink refill
 additional charge
 service
 wait
@@ -67,7 +67,7 @@ drinks
 management
 food wait
 food
-amience
+ambience
 service
 food
 chicken fried steak
@@ -82,7 +82,7 @@ food wait
 wait
 service wait
 smoke
-uniforms
+uniform
 service
 burger
 food
@@ -105,7 +105,8 @@ food wait
 wrap
 burger
 food
-food service
+food
+service
 food price
 drink price
 food
@@ -133,12 +134,12 @@ food
 service
 food price
 service
-service time
+service wait
 food price
 drink price
 ribs
 ribs
-chicken friend steak
+chicken fried steak
 chili
 service
 wait
@@ -192,7 +193,7 @@ food
 burger
 food
 steak
-manc n cheese
+mac n cheese
 nachos
 food
 food wait
@@ -228,7 +229,7 @@ drink price
 wait
 service
 food
-food rpice
+food price
 dirty
 wait
 service
@@ -295,7 +296,7 @@ service
 wrap
 food
 service
-bruger
+burger
 food poisoning
 drink price
 service
@@ -313,7 +314,7 @@ food wait
 food wait
 food
 nachos
-dinks
+drinks
 drink price
 food
 nachos
@@ -334,7 +335,6 @@ sandwhich
 fish and chips
 food poisoning
 food
-
 >>
 music
 food
@@ -354,30 +354,1744 @@ dance
 uniform
 service
 
-----
 TWO
 ----
-
+service
+food wait
+ribs
+food
+mac n cheese
+burger
+food price
+drinks
+food
+food price
+fried pickles
+drink price
+location
+uniform
+service
+food price
+burger
+food
+chicken
+potato salad
+food price
+service
+food
+steak
+baked potato
+mac n cheese
+location
+menu
+drink price
+food
+nachos
+food
+ribs
+mac n cheese
+coleslaw
+potato salad
+service
+drink price
+food
+location
+ambience
+ambience
+music
+tater tots
+mac n cheese
+drink price
+ambience
+service
+food
+food
+service wait
+food wait
+food
+food
+sloppy joe
+service
+drink price
+lunch
+steak
+food
+service
+service
+food price
+food
+wings
+potato skins
+food
+clothing
+gift shop
+service wait
+wait
+food wait
+ribs
+food
+wait
+nachos
+quesadilla
+mac n cheese
+service
+food
+location
+food
+pulled pork
+food
+food
+service
+wait
+gift card
+food wait
+food
+service
+food
+service
+service
+dirty
+food
+chicken fried steak
+wait
+service
+mac n cheese
+food price
+service
+food
+food price
+burger
+fries
+ribs
+food
+service wait
+food wait
+dirty
+service
+wait
+food
+wrap
+service
+uniform
+service
+wait
+wrap
+service
+burger
+food
+soup
+menu
+salad
+food price
+food
+burger
+food
+food price
+wrap
+food price
+food
+food
+food price
+mac n cheese
+burger
+chicken fried steak
+food wait
+portions
+food price
+food
+music
+food
+wings
+uniform
+food
+thanksgiving
+dirty
+location
+wait
+burger
+food
+service
+food
+wings
+tacos
+burger
+food
+ribs
+service
+wait
+food wait
+service
+uniform
+food
+food price
+wait
+service
+service wait
+service
+food wait
+fee
+drink price
+wait
+ambience
+food
+service
+service
+wrap
+wait
+service wait
+drink price
+food price
+food
+food price
+fries
+food price
+food
+fried pickles
+drink price
+dirty
+ambience
+music
+drinks
+drink price
+music
+food wait
+service
+service wait
+ribs
+wings
+food
+food price
+food
+menu
+quesadilla
+service
+service wait
+food
+sandwhich
+fajitas
+chicken fried steak
+fish and chips
+drink price
+service
+food
+food price
+service
+service wait
+uniform
+service wait
+food wait
+service
+bartender
+chicken sandwhich
+food
+service
+food
+wings
+wait
+bologna sandwhich
+pulled pork
+drink price
+food
+catfish
+mac n cheese
+fish and chis
+service
+food price
+food
+steak
+fajitas
+service
+ambience
+nachos
+chicken fried steak
+food
+service
+food price
+uniform
+food
+ruben
+bologna sandwhich
+bbq chicken
+service
+food
+ambience
+music
+food
+steak
+food price
+portions
+food
+uniform
+food price
+food
+burger
+fries
+chicken tender
+food
+service
+ambience
+uniform
+service
+pecan pie
+wings
+food price
+food
+food
+menu
+wrap
+wait
+food
+burger
+food
+chicken fried steak
+chicken tender
+service
 >>
+fries
+ambience
+service
+ambience
+service
+bologna sandwhich
+uniform
+food
+food
+shrimp
+drinks
+bartender
+music
+nachos
+ambience
+food
+ambience
+wait
+uniform
+service
+salad
+chicken sandwhich
+ambience
+drinks
+drinks
+bartnder
+catfish
+wings
+buffalo cheese sticks
+drinks
+uniform
+ambience
+service
+drinks
+service
+turkey sandwhich
+meatloaf
+food
+food
+uniform
+service
+menu
+drinks
+food
+drinks
+drinks
+bar
+bologna sandwhich
+chicken strips
+drinks
+burger
+drinks
+drink price
+menu
+uniform
+nachos
+service
+fries
+catfish
+food
+fries
+music
+food price
+bartender
+drinks
+drinks
+uniform
+music
+ambience
+service
+ambience
+music
+service
+fries
+food
+shrimp
+ambience
+drinks
+fries
+ambience
+drinks
+service
+drinks
+bar
+bartender
+music
+steak and prawns
+fries
+ambience
+music
+drinks
+food
+mac n cheese
+drinks
+food
+food
+food price
+parking
+ambience
+drinks
+music
+food
+service
+portions
+service
+bar
+food
+drinks
+service
+uniform
+music
 
-----
 THREE
 ----
-
+ambience
+music
+drink price
+music
+drink price
+food
+service
+food price
+wait
+uniform
+rotisserie chicken
+food
+ambience
+service wait
+food wait
+ribs
+food
+food price
+uniform
+drink price
+food
+fish and chips
+service
+food price
+food price
+location
+food
+drink price
+service
+food
+ambience
+wait
+service wait
+food wait
+service
+portions
+service
+ambience
+drink price
+food
+food price
+wrap
+steak
+music
+ambience
+food
+shrimp
+wait
+service
+cheesesteak
+atmosphere
+location
+food price
+food
+wrap
+menu
+service
+service
+burger
+service
+ambience
+food price
+service
+service wait
+food wait
+drink price
+ribs
+food wait
+menu
+ambience
+service
+service wait
+wrap
+service
+food price
+dirty
+drink price
+food
+ambience
+food
+nachos
+menu
+service
+food
+ambience
+drink price
+food price
+food
+food
+drink price
+food price
+drink price
+location
+catfish
+service wait
+food
+catfish
+food
+food
+drink price
+food
+drink price
+mac n cheese
+nachos
+service
+service
+drink price
+steak
+food price
+service
+service wait
+food wait
+menu
+wrap
+food price
+drink price
+food
+wings
+service
+drinks
+wait
+food wait
+food
+steak
+chicken
+meatloaf
+shrimp
+food price
+menu
+service
+food
+location
+food
+location
+food price
+portions
+drink price
+menu
+food
+drink price
+ambience
+service
+food
+ambience
+service
+menu
+uniform
+food
+food price
+food
+ambience
+steak sandwhich
+ambience
+food
+drink price
+ambience
+food wait
+food price
+food
+music
+drinks
+drink price
+location
+menu
+drink price
+location
+food
+service
+wait
+service wait
+burger
+service wait
+music
+food
+food
+chicken
+chicken
+drink price
+food wait
+service
+location
 >>
+uniform
+cover
+wings
+ruben
+pulled pork
+drinks
+music
+food
+music
+drink price
+music
+uniform
+bar
+ambience
+drink price
+mac n cheese
+food
+service
+nachos
+bartender
+drink price
+service
+ambience
+bartender
+music
+nachos
+service
+service
+drinks
+uniform
+service
+burger
+drinks
+music
+bartender
+ambience
+service
+service
+drinks
+music
+drinks
+ambience
+ambience
+service
+menu
+service
+music
+bar
+ambience
+drinks
+ambience
+bar
+bartender
+food price
+food
+service
+uniform
+music
+bartender
+music
+food
+drinks
+uniform
+nachos
+food
+wrap
+drinks
+food
+service
+wings
+drinks
+music
+chicken quesadilla
+wrap
+burger
+portions
+tortilla soup
+service
+ambience
+food
+chicken fried steak
+mac n cheese
+drinks
+ambience
+ambience
+wings
+nachos
+service
+uniform
+uniform
+steak sandwhich
+fries
+music
+service
+uniform
+ambience
+music
+fries
+ambience
+ambience
+music
+drinks
+ambience
+ambience
+music
+burger
+music
+food
+pulled pork
+food price
+burger 
+fries
+bologna sandwhich
+bartender
+mac n cheese
+nachos
+nachos
+burger
+chicken tender
+ambience
+music
+ruben
+fried twinkie
+fried pickles
+catfish
+drinks
+ambience
+drinks
+service
+food
+mac n cheese
+food
+burger
+catfish
+service
+ambience
+music
+drinks
+burger
+ambience
+fries
+mac n cheese
+ambience
+menu
+food
+mac n cheese
+bartender
+catfish
+food
+ambience
+drinks
+bologna sandwhich
+catfish
+chicken
+bar
+service
+uniform
+food
+music
+music
+food
+food
+ambience
+service
+ambience
+steak
+burger
+bartender
+music
 
-----
 FOUR
 ----
-
+drink price
+food wait
+location
+food price
+drink price
+drink price
+food price
+service
+uniform
+uniform
+wait
+service
+food wait
+service
+uniform
+service wait
+food wait
+food wait
+mac n cheese
+food price
+drink price
+location
+food wait
+service wait
+wait
+service
+mac n cheese
+food price
+menu
+food price
+menu
+uniform
+location
+service
+bologna sandwhich
+uniform
+location
+food price
+service
+wait
+food price
+uniform
+uniform
+drinks
+food
+food
+mac n cheese
+food price
+menu
+service
+service
+food
+drink price
+location
+uniform
+service
+food price
+drink price
+food price
+food wait
+food price
+food price
+service
+drinks
+food price
+menu
+service wait
+drink price
+service
+bathroom
+bathroom
+bathroom
+bathroom
+bathroom
 >>
+service
+bartender
+food
+service
+wait
+service
+food wait
+nachos
+portions
+food
+drinks
+music
+ambience
+food
+steak
+service
+music
+drinks
+ambience
+service
+pulled pork
+music
+ambience
+bartender
+burger
+service
+food
+food
+food price
+ambience
+food
+portions
+steak
+wings
+fried pickles
+drinks
+cover
+music
+drink price
+food
+wings
+music
+ambience
+fried twinkie
+ambience
+music
+service
+bartender
+service
+wrap
+fries
+drinks
+music
+food
+drinks
+music
+portions
+food
+service
+ambience
+service
+food
+burger
+wings
+mac n cheese
+ambience
+wait
+ambience
+food
+burger
+wrap
+bologna sandwhich
+ambience
+ambience
+drinks
+drink price
+fries
+burger
+food
+portions
+food price
+drinks
+bartender
+service
+music
+bar
+music
+cover
+food
+mac n cheese
+service
+drinks
+ambience
+wait
+food
+burger
+wings
+nachos
+drinks
+food
+music
+steak
+ambience
+music
+bartender
+music
+music
+ambience
+bar
+cover
+bartender
+drink price
+uniform
+burger
+drinks
+ambience
+menu
+nachos
+service
+food wait
+food
+steak
+music
+ambience
+bartender
+drinks
+service
+bartender
+food
+turkey club
+drinks
+food
+service
+drinks
+uniform
+ambience
+food
+portions
+portions
+mac n cheese
+nachos
+chicken fried steak
+drinks
+drinks
+chicken
+food price
+portions
+music
+food prices
+music
+ambience
+bar
+music
+drinks
+bar
+ambience
+burger
+service
+service
+food
+drinks
+ambience
+ambience
+service
+food wait
+music
+drinks
+music
+ambience
+service
+ambience
+food
+service
+burger
+ribeye
+sandwhich
+mac n cheese
+ambience
+ambience
+food price
+food
+chicken fried steak
+mac n cheese
+drinks
+ambience
+ambience
+music
+food
+service
+drinks
+nachos
+drinks
+food
+nachos
+music
+drinks
+drink price
+cover
+salad
+food
+service
+food
+burger
+sloppy joe
+food
+chicken strips
+music
+burger
+bartender
+drinks
+food
+ambience
+mac n cheese
+food
+service
+pulled pork
+wings
+ribs
+bartender
+burger
+mac n cheese
+food
+service
+ambience
+wait
+ambience
+food
+mac n cheese
+pulled pork
+service
+burger
+food
+drinks
+food
+ambience
+service
+food
+salad
+ambience
+drinks
+food prices
+wait
+service
+bartender
+portions
+music
+wait
+ambience
+food
+uniform
+food
+mac n cheese
+burger
+bologna sandwhich
+steak
+music
+ambience
+chicken fried steak
+okra
+mac n cheese
+portions
+music
+ambience
+food
+service
+ribs
+shrimp
+portions
+nachos
+food
+service
+drinks
+uniform
+wait
+ambience
+service wait
+drinks
+food
+fries
+drinks
+food
+bartender
+service
+wait
+ambience
+music
+menu
+ambience
+music
+uniform
+service
+ambience
+food
+ribs
+food
+ambience
+drinks
+drinks
+food
+bologna sandwhich
+fried twinkie
+meat loaf
+chicken fried steak
+music
+drinks
+food
+bologna sandwhich
+wings
+burger
+drinks
+steak
+mac n cheese
+fried twinkie
+service
+ambience
+uniform
+drinks
+nachos
+portions
+mac n cheese
+food price
+ambience
+bartender
+bar
+drinks
+bologna sandwhich
+ambience
+drinks
+bartender
+service
+food
+portions
+wrap
+fries
+service
+food
+portions
+food
+nachos
+portions
+music
+portions
+drinks
+ambience
+food
+portions
+service
+wait
+ambience
+drinks
+portions
+food
+ambience
+steak
+fries
+food
+drinks
+service
+ambience
+portions
+food
+service
+food price
+food
+uniform
+ribs
+mac n cheese
+ruben
+service
+uniform
+music
+ambience
+drinks
+uniform
+music
+burger
+service
+drinks
+music
+food price
+steak
+food
+portions
+service
+drinks
+salad
+bartender
+service
+tacos
+drinks
+food
+drinks
+ambience
+service
+ruben
+food
+drinks
+wings
+food
+service
+food
+ambience
+food
+food
+food
+ribs
+wings
+drinks
+drinks
+food
+uniform
+food
+service
+ambience
+wait
+service
+portions
+pulled pork
+burger
+service
+food
+ambience
+service
+bartender
+drinks
+nachos
+mac n cheese
+service
+mac n cheese
+ambience
+portions
+food
+burger
+uniform
+burger
+music
+ambience
+food
+music
+bartender
+drinks
+ambience
+food
+food
+mac n cheese
+cheese sticks
+potato skins
+wings
+drinks
+food
+drinks
+food
+pulled pork
+wrap
+pulled pork
+chicken fried steak
+bartender
+drinks
+drink price
+nachos
+food price
+ambience
+food
+service
+music
+ambience
+bartender
+burger
+fries
+wings
+ambience
+drinks
+music
 
-----
 FIVE
 ----
-
+smoke
+drink price
+uniform
+service
+bathroom
+service
+drink price
+drink price
+food price
+food
+bathroom
+bathroom
+bathroom
 >>
-
-
-
-
+drinks
+food
+service
+food wait
+food
+portions
+music
+service
+ambience
+music
+bartender
+service
+food
+fries
+service
+ambience
+fries
+catfish
+food
+service
+drinks
+music
+drinks
+burger
+food
+service
+service
+bartender
+music
+ambience
+bartender
+food
+service
+fries
+drinks
+food price
+food
+catfish
+bar
+shrimp
+mac n cheese
+quesadilla
+drinks
+bartender
+service
+drinks
+ambience
+drinks
+meatloaf
+chicken fried steak
+bolonga sandwhich
+food
+ribs
+drinks
+ambience
+service
+food wait
+service wait
+service
+food
+drinks
+drink price
+ambience
+service
+food
+drinks
+music
+drinks
+food
+food price
+wings
+music
+ambience
+music
+bartender
+fried pickles
+mac n cheese
+food
+ambience
+service
+pulled pork
+bologna sandwhich
+turkey club
+food
+drinks
+service
+ambience
+bartender
+music
+burger
+drinks
+ambience
+burger
+music
+fries
+bartender
+food
+burger
+burger
+music
+service
+food
+mac n cheese
+bologna sandwhich
+service
+bartender
+portions
+portions
+fries
+music
+food
+drinks
+fried pickles
+chicken fried steak
+fried twinkie
+drinks
+portions
+food price
+bartender
+music
+drinks
+music
+drinks
+bartender
+drinks
+music
+music
+ambience
+service
+bartender
+dumplings
+bartender
+ambience
+drinks
+music
+ambience
+food
+drinks
+ribs
+uniform
+bartender
+bar
+drinks
+music
+ambience
+mac n cheese
+salad
+bologna sandwhich
+fried twinkie
+ribs
+uniform
+ambience
+food
+music
+food price
+portions
+drinks
+food
+drinks
+service
+food
+drinks
+ambience
+music
+pulled pork
+mac n cheese
+tortilla soup
+ambience
+drinks
+drinks
+bartender
+food
+service
+music
+bartender
+abience
+music
+portions
+meatloaf
+burger
+music
+ambience
+service
+ambience
+music
+mac n cheese
+drinks
+ambience
+food
+service
+uniform
+ambience
+music
+location
+location
+bartender
+service
+bologna sandwhich
+drinks
+food
+service
+ambience
+wrap
+bartender
+service
+drinks
+burger
+drinks
+bartender
+music
+ambience
+drinks
+music
+bartender
+music
+bartender
+service
+music
+ambience
+salad
+fried pickles
+nachos
+burger
+food
+service
+uniform
+service
+ambience
+music
+food
+drinks
+bartender
+drinks
+service
+bartender
+bartender
+ambience
+uniform
+music
+ambience
+music
+food
+drinks
+drinks
+music
+ambience
+uniform
+service
+salad
+portions
+drinks
+drink price
+service
+bartender
+drinks
+food
+food
+music
+wings
+portions
+ambience
+portions
+uniform
+poritons
+service
+soup
+chicken tender
+wrap
+fries
+fried pickles
+portion
+service
+drinks
+food
+ambience
+uniform
+service
+drinks
+bartender
+ambience
+bartender
+service
+drink price
+music
+music
+ambience
+food
+drinks
+drinks
+service
+food
+fried pickles
+menu
+ambience
+music
+service
+service
+meatloaf
+burger
+ambience
+drinks
+music
+drinks
+fish and chips
+catfish
+music
+food
+burger
+nachos
+ambience
+bartender
+music
+food
+portions
+bologna sandwhich
+fries
+ambience
+music
+service
+wings
+fries
+ribs
+chicken fried steak
+portions
+drink
+food
+service
+ambeince
+music
+service
+uniform
+burger
+quesadilla
+portions
+drink price
+food price
+portions
+burger
+service
+pulled pork
+drinks
+ambience
+food
+club sandwhich
+portions
+uniform
+cover
+music
+drinks
+service
+uniform
+burger
+drinks
+wings
+bartender
+ambience
+drinks
+mac n cheese
+service
+bartender
+drinks
+ambience
+music
+catfish
+okra
+service
+wings
+mac n cheese
+abience
+fries
+drinks
+drink price
+bologna sandwhich
+music
+service
+food
+service
+portions
+club
+fries
+drinks
+ambience
+wings
+service
+drinks
+music
+bartender
+ambience
+mac n cheese
+burger
+fries
+ambience
+food
+service
+fried pickled
+mac n cheese
+service
+music
+uniform
+bologna sandwhich
+bartender
+music
+ambience
+ribs
+wings
+drinks
+service
+food
+food wait
+food
+driks
+service
+ambience
+service
+wings

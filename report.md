@@ -51,9 +51,15 @@ Of the businesses used, there are:
 
 ### Evaluation
 
-* Stop words and punctuation (clean for meaningful "terms")
+The best method for assessing the quality of summarization requires manually curated data. Quality metrics such as ROUGE or BLEU use human-generated summaries as a baseline and compare the system output to those summaries *ROUGE and BLEU papers*.
 
-* For generated results, calculate difference in "terms" (% coverage = ~ terms)
+Unfortunately, this project doesn't have the resources for completely curated evaluation. However, the evaluation of one generated summary for one business has been manually and included in this report.
+
+All other evaluation has been completed using a token coverage script that evaluates the total percentage of tokens that are covered by the generated summaries.
+
+This script evaluates coverage based on the n-grams up to 3-grams that are present in the reviews of a star rating and the generated summary for that star rating. These n-gram exclude any grams with punctuation or tokens from a stop list from Yoast SEO *YOAST SEO*.
+
+The coverage score is the percentage of grams covered by the summary over the total number of grams in the reviews. Because the *CLASSY* model considered each term as an idea, a general coverage score theoretically demonstrate the total ideas captured by the generated summary. The more ideas covered, the better representation of the reviews as a whole is captured in a snapshot of the text.
 
 The qualitative value of terms is not measured by term coverage. This measurement indicates that the system consistently captures a wider range of terms (or ideas) than randomly generated summaries. Additional evaluation is necessary to determine whether the terms capture the central idea of reviews.
 
