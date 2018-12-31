@@ -138,8 +138,8 @@ In a future study, this system could be improved by adding features that improve
 
 * Conroy, J. M., J. D. Schlesinger, J. Goldstein, and D. P. O’Leary (2004) Left Brain Right Brain Multi-Document Summarization.
 * Riggin, Greve, Lindberg, Mathias, Topic-focused Summarization via Decomposition Deliverable D3. Unpublished, Ling573 University of Washington. 2018
-* BLEU Scoring Metric [wikipedia.org/wiki/BLEU](https://en.wikipedia.org/wiki/BLEU)
-* Extractive Summarization [wikipedia.org/wiki/Automatic_summarization#Extraction-based_summarization](https://en.wikipedia.org/wiki/Automatic_summarization#Extraction-based_summarization)
-* ROUGE Scoring Metric [wikipedia.org/wiki/ROUGE_(metric)](https://en.wikipedia.org/wiki/ROUGE_(metric))
-* tf-idf [wikipedia.org/wiki/Tf%E2%80%93idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
-* Yoast [github.com/Yoast/wordpress-seo](https://github.com/Yoast/wordpress-seo)
+* BLEU Scoring Metric https://en.wikipedia.org/wiki/BLEU
+* Extractive Summarization https://en.wikipedia.org/wiki/Automatic_summarization#Extraction-based_summarization
+* ROUGE Scoring Metric https://en.wikipedia.org/wiki/ROUGE_(metric)
+* tf-idf https://en.wikipedia.org/wiki/Tf%E2%80%93idf
+* Yoast Wordpress SEO https://github.com/Yoast/wordpress-seo
