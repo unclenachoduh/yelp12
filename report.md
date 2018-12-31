@@ -36,7 +36,7 @@ In this system, each word found in a review is treated as a term, or as Conroy e
 
 Traditional tf-idf scores, however, favor terms that have a high density in few documents (Riggin et al. 2018). In order to find the central message of the reviews of a single star rating, this system uses a scoring metric that favors terms that appear in many documents in the target star rating but reduces the score of a term that appears often in other star ratings as well.
 
-The weighting metric used in this system is a tf-df\*itf-idf, where tf-df is the term frequency multipled by document frequency in reviews of the target star rating and that is multiplied by itf-idf, which is the inverse term frequency multiplied by the inverse document frequency in reviews belonging to reviews with star ratings outside of the target. 
+The weighting metric used in this system is a tf-df\*itf-idf, where tf-df is the term frequency multipled by document frequency in reviews of the target star rating and that is multiplied by itf-idf, which is the inverse term frequency multiplied by the inverse document frequency in reviews belonging to reviews with star ratings outside of the target.
 
 ### Data
 
@@ -130,14 +130,14 @@ Manual analysis allows more additional measurements to be made concerning summar
 
 In addition to further evaluation of this system, other summarization methods are worthy of investigation.
 
-In a future study, this system could be improved by adding features that improve content selection or realization. Additionally, abstractive methods for summarization should be explored as a solution to the review summarization question. 
+In a future study, this system could be improved by adding features that improve content selection or realization. Additionally, abstractive methods for summarization should be explored as a solution to the review summarization question.
 
 *Access the project at https://github.com/unclenachoduh/yelp12*
 
 ## Sources
 
-* Conroy, J. M., J. D. Schlesinger, J. Goldstein, and D. P. O’Leary (2004) Left Brain Right Brain Multi-Document Summarization. 
-* Riggin, Greve, Lindberg, Mathias, Topic-focused Summarization via Decomposition Deliverable D3. Unpublished, Ling573 University of Washington. 2018 
+* Conroy, J. M., J. D. Schlesinger, J. Goldstein, and D. P. O’Leary (2004) Left Brain Right Brain Multi-Document Summarization.
+* Riggin, Greve, Lindberg, Mathias, Topic-focused Summarization via Decomposition Deliverable D3. Unpublished, Ling573 University of Washington. 2018
 * BLEU Scoring Metric [wikipedia.org/wiki/BLEU](https://en.wikipedia.org/wiki/BLEU)
 * Extractive Summarization [wikipedia.org/wiki/Automatic_summarization#Extraction-based_summarization](https://en.wikipedia.org/wiki/Automatic_summarization#Extraction-based_summarization)
 * ROUGE Scoring Metric [wikipedia.org/wiki/ROUGE_(metric)](https://en.wikipedia.org/wiki/ROUGE_(metric))
