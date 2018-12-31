@@ -71,6 +71,8 @@ The qualitative value of terms is not measured by term coverage. This measuremen
 
 ### Performance
 
+For a lack of resources, performance was measured manually for only one business. Additionally, an evaluation script was used for simple token coverage analysis.
+
 #### Manual Analysis
 
 System performance was evaluated mannually for the business with id: **VUtazCTIc0aoOrQprP_s-Q**.
@@ -86,6 +88,8 @@ The results are seen in the table below.
 | Extractive | Random Average |
 | - | - |
 | 29.2 | 22.82 |
+
+Based on the results of this evaluation, the generated extractive summary contains sentences that represent central ideas with greater frequency than randomly generated summaries.
 
 #### Coverage Analysis
 
@@ -106,23 +110,15 @@ Coverage analysis shows that the extractive system consistently covers a larger 
 
 ## Discussion
 
-### Performance
+This system generates viable summaries of Yelp reviews that present core concepts found in the original review text. Based on manual evaluation and token coverage, the system consistenty performs better than randomly generated sumamries of equivalent or greater length.
 
-* Manually reviewed performance.
+In addition to selecting sentences with core concepts, the sentences that appear in generated extractive summaries are typically grammatical, while randomly generated sentences had a higher rate of ungrammatical or unintelligable sentences.
 
+This system doesn't only produce sumamries that contain central concepts with greater frequency, but also covers a greater quantity of the concepts contained in the original reviews.
 
+The results from token coverage analysis indicate that the generated extractive reviews cover between 10-15 more tokens than randomly generated summaries.
 
-* Beats summarizations generated at random in coverage.
-
-
-30 discrepancy = 15.6 tokens
-10 discrepancy = 10.3 tokens
-
-Average review length 30 = 130.26
-Average review length 10 = 142.9
-
-Average sentence length 30 = 15
-Average sentence length 10 = 16
+Given that the sentences average 15 tokens per sentence, the token discrepancy is nearly the value of an entire sentence. This occuring while randomly generated sentences have a greater average length than extractive reviews.
 
 The results of this project show promise that summarization could provide value to end users of business review apps like Yelp. Summaries reduce the cognitive cost and quanity of text that a user must read in order to access the core concepts contained in a body of reviews.
 
