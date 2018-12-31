@@ -9,8 +9,8 @@ import build_model, topic, exsum
 # External Packages
 import nltk
 
-json_file = "yelp_dataset/yelp_academic_dataset_review.json"
-# json_file = "output/VUtazCTIc0aoOrQprP_s-Q.json"
+# json_file = "yelp_dataset/yelp_academic_dataset_review.json"
+json_file = "output/VUtazCTIc0aoOrQprP_s-Q.json"
 # bus_id = "VUtazCTIc0aoOrQprP_s-Q"
 # bus_id = sys.argv[1]
 
@@ -29,55 +29,56 @@ else:
 run_analytics = True
 
 for bus_id in businesses:
+	if bus_id != "":
 
-	print("\n+----- YELP12 Sytem Running -----+\n|")
-	print("|  BID:", bus_id)
+		print("\n+----- YELP12 Sytem Running -----+\n|")
+		print("|  BID:", bus_id)
 
-	model_data = build_model.build(json_file, bus_id, run_analytics)
+		model_data = build_model.build(json_file, bus_id, run_analytics)
 
-	if model_data:
+		if model_data:
 
-		model_num = 0
+			model_num = 0
 
-		wout = open("output/TEST_SUMMARY_" + bus_id, "w+")
+			wout = open("output/TEST_SUMMARY_" + bus_id, "w+")
 
-		wout.write("YELP12 OUTPUT FOR BUSINESS: " + bus_id + "\n\n")
+			wout.write("YELP12 OUTPUT FOR BUSINESS: " + bus_id + "\n\n")
 
-		topics = []
-		sentences = []
-		reviews = []
-		summaries = []
+			topics = []
+			sentences = []
+			reviews = []
+			summaries = []
 
-		i = 0
-		for model in model_data:
-			model_num += 1
-			print("|\n|  > STAR NUMBER:", model_num)
+			i = 0
+			for model in model_data:
+				model_num += 1
+				print("|\n|  > STAR NUMBER:", model_num)
 
-			tw_results = topic.words(model, model_data, i)
-			i += 1
+				tw_results = topic.words(model, model_data, i)
+				i += 1
 
-			topic_words = " ".join(sorted(tw_results[0]))
+				topic_words = " ".join(sorted(tw_results[0]))
 
-			token_score = tw_results[1]
+				token_score = tw_results[1]
 
-			topics.append(topic_words)
+				topics.append(topic_words)
 
-			ext_sum = exsum.summary(model, token_score)
+				ext_sum = exsum.summary(model, token_score)
 
-			summaries.append(ext_sum)
+				summaries.append(ext_sum)
 
-		wout.write("EXTRACTIVE SUMMARY\n\n")
-		star_count = 1
-		for summary in summaries:
-			wout.write("STARS: " + str(star_count) + "\n" )
-			wout.write(summary + "\n\n")
-			star_count += 1
+			wout.write("EXTRACTIVE SUMMARY\n\n")
+			star_count = 1
+			for summary in summaries:
+				wout.write("STARS: " + str(star_count) + "\n" )
+				wout.write(summary + "\n\n")
+				star_count += 1
+				
+		else:
+			print("|")
+			print("|  X Business not found")
 			
-	else:
 		print("|")
-		print("|  X Business not found")
-		
-	print("|")
-	print("|     Thank you for flying")
-	print("|  Uncle Nacho, Duh Airlines :)")
-	print("|\n+------ YELP12 Sytem Ended ------+\n")
+		print("|     Thank you for flying")
+		print("|  Uncle Nacho, Duh Airlines :)")
+		print("|\n+------ YELP12 System Ended ------+\n")

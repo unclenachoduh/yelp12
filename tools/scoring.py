@@ -13,8 +13,8 @@ for word in stopwords_source:
 	for token in tokens:
 		nltk_stopwords[token] = 1
 
-# json_file = "yelp_dataset/yelp_academic_dataset_review.json"
-json_file = "output/VUtazCTIc0aoOrQprP_s-Q.json"
+json_file = "yelp_dataset/yelp_academic_dataset_review.json"
+# json_file = "output/VUtazCTIc0aoOrQprP_s-Q.json"
 
 files = []
 
@@ -134,7 +134,7 @@ def rand_sum(plain_lines, rev_len):
 		rand_count +=1
 	return rand_tokes
 
-wout = open("analysis_out.txt", "w+")
+wout = open(sys.argv[1] + "_analysis_out.txt", "w+")
 
 average = 0
 extractive = 0

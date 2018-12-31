@@ -30,7 +30,6 @@ def out_data(all_model, ind):
 
 	return giant_model
 
-
 def words(model, all_model, ind):
 	itfdf = {}
 
