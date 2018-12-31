@@ -26,7 +26,7 @@ The features and methods for summarization are detailed in the following subsect
 
 ### Extractive Summarization
 
-The summarization engine used in this project is an extractive system. Extractive summarization uses segments that are present in the system to compile a condensed representation of the entire body and is the counterpart to abstractive summarization, which generates original summary text. *Source*.
+The summarization engine used in this project is an extractive system. Extractive summarization uses segments that are present in the system to compile a condensed representation of the entire body and is the counterpart to abstractive summarization, which generates original summary text (Extractive Summarization).
 
 ### Modified tf-idf
 
@@ -136,10 +136,10 @@ In a future study, this system could be improved by adding features that improve
 
 ## Sources
 
-* Carenini, Giuseppe & Chi, Jackie & Cheung, Kit. (2008). Extractive vs. NLG-based Abstractive Summarization of Evaluative Text: The Effect of Corpus Controversiality.
 * Conroy, J. M., J. D. Schlesinger, J. Goldstein, and D. P. O’Leary (2004) Left Brain Right Brain Multi-Document Summarization. 
 * Riggin, Greve, Lindberg, Mathias, Topic-focused Summarization via Decomposition Deliverable D3. Unpublished, Ling573 University of Washington. 2018 
 * BLEU Scoring Metric [wikipedia.org/wiki/BLEU](https://en.wikipedia.org/wiki/BLEU)
+* Extractive Summarization [wikipedia.org/wiki/Automatic_summarization#Extraction-based_summarization](https://en.wikipedia.org/wiki/Automatic_summarization#Extraction-based_summarization)
 * ROUGE Scoring Metric [wikipedia.org/wiki/ROUGE_(metric)](https://en.wikipedia.org/wiki/ROUGE_(metric))
 * tf-idf [wikipedia.org/wiki/Tf%E2%80%93idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
 * Yoast [github.com/Yoast/wordpress-seo](https://github.com/Yoast/wordpress-seo)
